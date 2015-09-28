@@ -8,6 +8,19 @@ var conn =mysql.createConnection({ //  mysql.createPool({ //
     }
 );
 
+/*
+    (TBD) Potential Error cases
+
+    200 : 'OK',
+    201 : 'Created',
+    202 : 'Accepted',
+    203 : 'Non-Authoritative Information',
+    204 : 'No Content',
+    404 : 'Not Found',
+    416 : 'Requested Range Not Satisfiable',
+
+*/
+
 exports.findAll = function(req, res) {
     var query = "select * from a_user";
 
@@ -15,6 +28,7 @@ exports.findAll = function(req, res) {
         // conn.release(); try if pooled
         if(error) {
             console.dir(error);
+            // res.send(404); 
         } else {
             res.jsonp(result);
         } 
@@ -29,6 +43,7 @@ exports.findById = function(req, res) {
         // conn.release(); try if pooled
         if(error) {
             console.dir(error);
+            // res.send(404);
         } else {
           res.jsonp(result);
         }
@@ -43,6 +58,7 @@ exports.destroy = function(req, res) {
         // conn.release(); try if pooled
         if(error) {
             console.dir(error);
+            // res.send(404);
         } else {
           res.jsonp(result);
         }
@@ -56,6 +72,7 @@ exports.add = function(req, res) {
         // conn.release(); try if pooled
         if(error) {
             console.dir(error);
+            // res.send(404);
         } else {
           res.jsonp(result);
         }
@@ -70,8 +87,8 @@ exports.update = function(req, res) {
     conn.query('update a_user set ? where ?', [req.body, userId], function(error, result){
         // conn.release(); try if pooled
         if(error) {
-            console.log("Enormous Error fu");
             console.dir(error);
+            // res.send(404);
         } else {
           res.jsonp(result);
         }
