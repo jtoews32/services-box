@@ -1,32 +1,34 @@
-## Node.js + MySQL + Rest ##
+# Node.js + MySQL + Rest #
 
-## Setting Up ##
+Summary: A simple service with no security Middleware added.
+
+
+# Setting Up and Starting Services-Box #
 
 npm install
 
 node server.js
 
-
-## Starting Services-Box ##
+or
 
 DEBUG=services-box npm start
 
 
-## API ##
+# API #
 
-# Fetch (GET) # 
+## Fetch (GET) ## 
 
 curl http://localhost:3000/users
 curl http://localhost:3000/users/1
 
-# Insert (POST) #
+## Insert (POST) ##
 
 curl -H "Content-Type: application/json" -X "POST" -d '{"lastname":"shields","firstname":"will"}' http://localhost:3000/users  
 
-# Update (PUT) #
+## Update (PUT) ##
 
 curl -H "Content-Type: application/json" -X "PUT" -d '{"lastname":"sshields","firstname":"wwill"}' http://localhost:3000/users/36
 
-# Remove (DELETE) #
+## Remove (DELETE) ##
 
 curl -X "DELETE" http://localhost:3000/users/37
