@@ -1,0 +1,13 @@
+{
+  "name": "selenous-restful-api",
+  "description": "Selenous Restful API",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.14.0",
+    "express": "3.x",
+    "method-override": "^2.3.5",
+    "mongodb": "*",
+    "mysql": "^2.9.0"
+  }
+}
