@@ -18,7 +18,7 @@ DEBUG=services-box npm start
 
 
 
-Get list of users, or get specific users.
+###Get list of users, or get specific users.###
 
 GET /users
 
@@ -35,7 +35,7 @@ curl http://localhost:3000/users/1
 ```
 
 
-Insert a new user.
+###Insert a new user.###
 
 POST /users with payload
 
@@ -50,7 +50,7 @@ curl -H "Content-Type: application/json" -X "POST" -d '{"lastname":"shields","fi
 ```
 
 
-Update an existing user.
+###Update an existing user.###
 
 PUT /users/:id with payload
 
@@ -61,7 +61,7 @@ curl -H "Content-Type: application/json" -X "PUT" -d '{"lastname":"sshields","fi
 ```
 
 
-Remove existing user.
+###Remove existing user.###
 
 DELETE /users/:id
 
