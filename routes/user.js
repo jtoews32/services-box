@@ -22,9 +22,9 @@ exports.findAll = function(req, res) {
 
 exports.findById = function(req, res) {
     var id = parseInt(req.params.id);
-    var query = "select * from a_user where user_id = " + id;
+    var query = "select * from a_user where user_id = ?";
 
-    conn.query(query, function(error, result) {
+    conn.query(query, [id], function(error, result) {
         if(error) {
             console.dir(error);
         } else {
@@ -35,9 +35,9 @@ exports.findById = function(req, res) {
 
 exports.destroy = function(req, res) {
     var id = parseInt(req.params.id);
-    var query = "delete from a_user where user_id = " + id;
+    var query = "delete from a_user where user_id = ?";
 
-    conn.query(query, function(error, result) {
+    conn.query(query, [id], function(error, result) {
         if(error) {
             console.dir(error);
         } else {
