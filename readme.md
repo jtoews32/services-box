@@ -16,7 +16,7 @@ DEBUG=services-box npm start
 
 # API #
 
-## Fetch (GET) ## 
+Fetch (GET)
 
 ```bash
 
@@ -26,7 +26,7 @@ curl http://localhost:3000/users/1
 
 ```
 
-## Insert (POST) ##
+Insert (POST)
 
 ```bash
 
@@ -34,7 +34,7 @@ curl -H "Content-Type: application/json" -X "POST" -d '{"lastname":"shields","fi
 
 ```
 
-## Update (PUT) ##
+Update (PUT)
 
 ```bash
 
@@ -42,7 +42,7 @@ curl -H "Content-Type: application/json" -X "PUT" -d '{"lastname":"sshields","fi
 
 ```
 
-## Remove (DELETE) ##
+Remove (DELETE)
 
 ```bash
 
