@@ -55,8 +55,7 @@ exports.add = function(req, res) {
         } else {
           res.jsonp(result);
         }
-
-        console.log('Last insert ID:', result.insertId);
+        // console.log('Last insert ID:', result.insertId);
     });
 };
 
