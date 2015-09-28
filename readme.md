@@ -12,27 +12,21 @@ node server.js
 DEBUG=services-box npm start
 
 
-## Testing ##
+## API ##
 
-GET 
+# Fetch (GET) # 
 
 curl http://localhost:3000/users
 curl http://localhost:3000/users/1
 
-
-DELETE
-
-curl -X "DELETE" http://localhost:3000/users/37
-
-
-TODO ADD FILTER
-
-
-POST
+# Insert (POST) #
 
 curl -H "Content-Type: application/json" -X "POST" -d '{"lastname":"shields","firstname":"will"}' http://localhost:3000/users  
 
-
-PUT
+# Update (PUT) #
 
 curl -H "Content-Type: application/json" -X "PUT" -d '{"lastname":"sshields","firstname":"wwill"}' http://localhost:3000/users/36
+
+# Remove (DELETE) #
+
+curl -X "DELETE" http://localhost:3000/users/37
