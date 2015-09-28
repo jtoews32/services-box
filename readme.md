@@ -1,9 +1,9 @@
-# Node.js + MySQL + Rest #
+# Node.js + MySQL + REST #
 
-Summary: A simple service with no security Middleware added.
+A simple service with no security middleware added.
 
 
-# Setting Up and Starting Services-Box #
+# Setting up and running services-box #
 
 npm install
 
