@@ -16,7 +16,15 @@ DEBUG=services-box npm start
 
 # API #
 
-Fetch (GET)
+
+
+Get list of users, or get specific users.
+
+GET /users
+
+GET /users/:id
+
+Example request:
 
 ```bash
 
@@ -26,6 +34,13 @@ curl http://localhost:3000/users/1
 
 ```
 
+
+Insert a new user.
+
+POST /users with payload
+
+Example request:
+
 Insert (POST)
 
 ```bash
@@ -34,7 +49,10 @@ curl -H "Content-Type: application/json" -X "POST" -d '{"lastname":"shields","fi
 
 ```
 
-Update (PUT)
+
+Update an existing user.
+
+PUT /users/:id with payload
 
 ```bash
 
@@ -42,7 +60,10 @@ curl -H "Content-Type: application/json" -X "PUT" -d '{"lastname":"sshields","fi
 
 ```
 
-Remove (DELETE)
+
+Remove existing user.
+
+DELETE /users/:id
 
 ```bash
 
