@@ -1,7 +1,5 @@
 # Node.js + MySQL + REST #
 
-[REMOVE ME]
-
 A simple service with no security middleware added.
 
 
