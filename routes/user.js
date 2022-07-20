@@ -66,6 +66,8 @@ exports.destroy = function(req, res) {
 };
 
 exports.add = function(req, res) {
+    var id = parseInt(req.params.id);
+
     conn.query('insert into a_user set ?', req.body, function(error, result){
         // conn.release(); try if pooled
         if(error) {

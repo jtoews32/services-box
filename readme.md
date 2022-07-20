@@ -26,7 +26,6 @@ GET /users
 
 GET /users/:id
 
-
 Example request:
 
 ```bash
@@ -42,8 +41,9 @@ curl http://localhost:3000/users/1
 
 POST /users with payload
 
-
 Example request:
+
+Insert (POST)
 
 ```bash
 
@@ -56,9 +56,6 @@ curl -H "Content-Type: application/json" -X "POST" -d '{"lastname":"shields","fi
 
 PUT /users/:id with payload
 
-
-Example request:
-
 ```bash
 
 curl -H "Content-Type: application/json" -X "PUT" -d '{"lastname":"sshields","firstname":"wwill"}' http://localhost:3000/users/36
@@ -69,9 +66,6 @@ curl -H "Content-Type: application/json" -X "PUT" -d '{"lastname":"sshields","fi
 ###Remove existing user.###
 
 DELETE /users/:id
-
-
-Example request:
 
 ```bash
 
