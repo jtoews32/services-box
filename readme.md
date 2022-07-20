@@ -1,7 +1,5 @@
 # Node.js + MySQL + REST #
 
-I'm an unwanted change
-
 A simple service with no security middleware added.
 
 
